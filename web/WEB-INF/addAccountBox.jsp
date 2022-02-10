@@ -5,15 +5,32 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="Content-Type" href="../css/bootstrap.min.css">
-        <title>JSP Page</title>
-    </head>
-    <body>
-        <h1>pokeda!!!</h1>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    </body>
-</html>
+<div class="w-100 d-flex justify-content-center">
+    <form action="createAccountBox method=POST">
+    <div class="card border-primary mb-3" style="width: 30em;">
+        <h2 class="my-5">Сохранить данные для адресса</h2>
+        <div class="form-group">
+            <label for="url" class="form-label mt-4">url</label>
+            <input type="text" class="form-control" id="url" name="url" aria-describedby="">
+            <small id="url" hidden class="form-text text-muted">Error</small>
+        </div>
+        
+        <div class="form-group">
+            <label for="urlLogin" class="form-label mt-4">Логин</label>
+            <input type="text" class="form-control" id="url" name="url" aria-describedby="">
+            <small id="url" hidden class="form-text text-muted">Error</small>
+        </div>
+        
+        <div class="form-group">
+            <label for="urlLogin" class="form-label mt-4">Логин</label>
+            <input type="text" class="form-control" id="url" name="url" aria-describedby="">
+            <small id="url" hidden class="form-text text-muted">Error</small>
+        </div>
+        
+        <div class="form-group">
+            <label for="urlLogin" class="form-label mt-4">Пароль</label>
+            <input type="text" class="form-control" id="url" name="url" aria-describedby="">
+            <small id="url" hidden class="form-text text-muted">Error</small>
+        </div>
+    </form>
+    </div>

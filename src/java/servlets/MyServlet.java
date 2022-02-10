@@ -19,7 +19,8 @@ import javax.servlet.http.HttpServletResponse;
  * @author pupil
  */
 @WebServlet(urlPatterns = {
-    "/addAccountBox"
+    "/addAccountBox",
+    "/createAccountBox",
 })
 public class MyServlet extends HttpServlet {
 
@@ -40,6 +41,11 @@ public class MyServlet extends HttpServlet {
         switch (path){
             case "/addAccountBox":
                 request.getRequestDispatcher("/WEB-INF/addAccountBox.jsp").forward(request, response);
+                break;
+        
+        case "/createAccountBox":
+                String url = request.getParameter("url");
+                String urlLogin = request.getParameter("urlLogin");
                 break;
         }
     }
